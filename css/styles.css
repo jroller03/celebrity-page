@@ -1,0 +1,11 @@
+.glyphicon {
+  display: none;
+}
+
+#match {
+  display: none;
+  text-align: center;
+  border: 2px solid green;
+  padding: 2px;
+  margin: 100px;
+}

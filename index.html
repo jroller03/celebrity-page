@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dating Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This will be your celebrity match</h1>
+      <p>Enter your information and we'll find your perfect celebrity match!</p>
+
+      <form id="info">
+        <div class="form-group has-feedback" id="nameError">
+          <label class="control-label" for="name">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="inputError2Status">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">Please fill out completely</span>
+        </div>
+
+        <div class="form-group has-feedback" id="ageError">
+          <label class="control-label" for="age">Age</label>
+          <input type="text" class="form-control" id="age" aria-describedby="inputError2Status">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">Please fill out completely</span>
+        </div>
+
+        <div class="container">
+          <label class="control-label" for="gender">Gender</label>
+          <select id="gender">
+           <option value="female">Female</option>
+           <option value="male">Male</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <label class="control-label" for="food">Your favorite food</label>
+          <select id="food">
+             <option value="1">Italian</option>
+             <option value="2">Chinese</option>
+             <option value="3">Greek</option>
+             <option value="4">Mexican</option>
+          </select>
+        </div>
+
+          <div class="container">
+          <label class="control-label" for="movie">Your favorite movie</label>
+          <select id="Movie">
+             <option value="1">Horror</option>
+             <option value="2">Comedy</option>
+             <option value="3">Action</option>
+             <option value="4">Drama</option>
+             <option value="5">Romance</option>
+          </select>
+          </div>
+        </div>
+      <div class="container">
+        <button type="submit" class="btn btn-success">Celebrity match</button>
+      </div>
+      </form>
+      <div id="match">
+        <h2>You have matched up with <span class="celebrity"></span>. Congratuations on your major success.</h2>
+      </div>
+    </div>
+
+  </body>
+</html>
